@@ -1,0 +1,61 @@
+{
+  "name": "@globalpayments/mcp-server",
+  "version" : "1.0.9",
+  "description": "Global Payments API MCP Server for AI agent integration",
+  "author": "Global Payments",
+  "license": "GPL-2.0",
+  "engines": {
+    "node": ">=18",
+    "npm": ">=10.8.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/globalpayments/mcp-server.git"
+  },
+  "main": "./lib/src/index.js",
+  "typings": "./lib/src/index",
+  "scripts": {
+    "build": "tsc",
+    "test:jest": "jest",
+    "prebuild": "npm-run-all test:lint",
+    "build:clean": "rimraf lib",
+    "prepublishOnly": "npm-run-all build",
+    "pretest": "npm-run-all build:clean test:lint build",
+    "format": "prettier --write --config .prettierrc 'src/**/*.ts' 'tests/**/*.ts' '*.md'",
+    "test:lint": "eslint \"src/**/*.ts*\" \"tests/**/*.ts\" --fix"
+  },
+  "keywords": [
+    "mcp",
+    "global-payments",
+    "api",
+    "server"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.17.1",
+    "axios": "^1.7.7",
+    "dotenv": "^16.4.5",
+    "yaml": "^2.8.1",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@jest/globals": "^30.2.0",
+    "@types/eslint__js": "^8.42.3",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^20.11.30",
+    "eslint": "^9.39.1",
+    "eslint-config-prettier": "^10.1.8",
+    "jest": "^30.2.0",
+    "prettier": "^3.2.5",
+    "rimraf": "^5.0.10",
+    "ts-jest": "^29.4.6",
+    "npm-run-all": "^4.1.5",
+    "glob": "^10.5.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3",
+    "typescript-eslint": "^8.48.0"
+  },
+  "overrides": {
+    "test-exclude": "^7.0.1"
+  }
+}

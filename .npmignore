@@ -1,0 +1,50 @@
+# Test files
+tests/
+**/*.test.ts
+**/*.spec.ts
+coverage/
+
+# Source files (publish compiled only)
+src/
+tsconfig.json
+tsconfig.*.json
+
+# Config files
+.env
+.env.example
+.eslintrc*
+eslint.config.mjs
+jest.config.js
+.prettierrc
+
+# Documentation
+docs/
+Claude/
+
+# IDE
+.vscode/
+.idea/
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# CI/CD
+.travis.yml
+.github/
+
+# Build scripts
+bin/
+
+# Misc
+config/
+examples/
+lib/
+!lib/src
+netsuite/
+test/
+docker-compose.yml
+tslint.json
+yarn.lock
+yarn-error.log

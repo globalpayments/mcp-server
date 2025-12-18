@@ -1,0 +1,11 @@
+{
+  "servers": {
+    "global-payments": {
+      "command": "node",
+      "args": [
+        "lib/index.js"
+      ],
+      "cwd": "./"
+    }
+  }
+}

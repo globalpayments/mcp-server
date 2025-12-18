@@ -1,0 +1,53 @@
+# Logs (more comprehensive)
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Runtime
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Build output
+lib/
+dist/
+
+# Testing
+.nyc_output/
+*.lcov
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Optional npm cache
+.npm
+
+# Optional REPL history
+.node_repl_history
+
+# Lock files (if using npm)
+yarn.lock
+
+# Environment variables
+.env
+.env.local
+.env.test
+.env.production
+
+# IDE
+.vscode/
+.idea/
+.DS_Store
+
+# Coverage
+coverage/
+
+# Build files
+logger.txt
+# Snyk Security Extension - AI Rules (auto-generated)
+.github/instructions/snyk_rules.instructions.md
