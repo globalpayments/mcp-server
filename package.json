@@ -31,11 +31,11 @@
     "server"
   ],
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.17.1",
+    "@modelcontextprotocol/sdk": "^1.31.0",
     "axios": "^1.16.0",
     "dotenv": "^16.4.5",
     "yaml": "^2.8.3",
-    "zod": "^3.23.8"
+    "zod": "^4.6.6"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
